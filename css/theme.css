@@ -26,10 +26,10 @@ body {
 }
 
 a {
-  color: #b2bb1d;
+  color: #1694CA;
 }
 a:hover {
-  color: #737913;
+  color: #0e6185;
 }
 
 pre {
@@ -38,7 +38,7 @@ pre {
 
 .bg {
   background: #fff;
-  border: 1px solid #eaeaea;
+  border: 1px solid #d1d1d1;
 }
 
 b, strong, th, label {
@@ -64,12 +64,12 @@ textarea:hover, input[type=email]:hover, input[type=number]:hover, input[type=pa
   border-color: #c4c4c4;
 }
 textarea:focus, input[type=email]:focus, input[type=number]:focus, input[type=password]:focus, input[type=search]:focus, input[type=tel]:focus, input[type=text]:focus, input[type=url]:focus, input[type=color]:focus, input[type=date]:focus, input[type=datetime]:focus, input[type=datetime-local]:focus, input[type=month]:focus, input[type=time]:focus, input[type=week]:focus, select[multiple=multiple]:focus {
-  border-color: #b2bb1d;
-  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(157, 165, 26, 0.7);
+  border-color: #1694CA;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(19, 131, 179, 0.7);
 }
 
 #header {
-  background: #b2bb1d;
+  background: #1694CA;
   color: #fff;
   text-align: center;
   padding: 1rem;
@@ -88,8 +88,8 @@ textarea:focus, input[type=email]:focus, input[type=number]:focus, input[type=pa
 .searchbox {
   margin-top: 0.5rem;
   position: relative;
-  border: 1px solid #c7d120;
-  background: #9da51a;
+  border: 1px solid #19a5e1;
+  background: #1383b3;
   border-radius: 4px;
 }
 .searchbox label {
@@ -287,7 +287,7 @@ textarea:focus, input[type=email]:focus, input[type=number]:focus, input[type=pa
   text-align: right;
 }
 #sidebar ul li.visited > a .read-icon {
-  color: #b2bb1d;
+  color: #1694CA;
   display: inline;
 }
 #sidebar ul li li {
@@ -569,7 +569,7 @@ hr {
   padding: 25px;
   float: left;
   clear: both;
-  background: #b2bb1d;
+  background: #1694CA;
   color: #fff;
 }
 
@@ -577,7 +577,7 @@ hr {
   color: #ccc;
 }
 #body a.anchor-link:hover {
-  color: #b2bb1d;
+  color: #1694CA;
 }
 
 .scrollbar-inner > .scroll-element .scroll-element_track {
@@ -612,17 +612,17 @@ td {
 }
 
 .button {
-  background: #b2bb1d;
+  background: #1694CA;
   color: #fff;
-  box-shadow: 0 3px 0 #99a119;
+  box-shadow: 0 3px 0 #1380ae;
 }
 .button:hover {
-  background: #99a119;
-  box-shadow: 0 3px 0 #808615;
+  background: #1380ae;
+  box-shadow: 0 3px 0 #106c93;
   color: #fff;
 }
 .button:active {
-  box-shadow: 0 1px 0 #808615;
+  box-shadow: 0 1px 0 #106c93;
 }
 
 .button-secondary {
@@ -680,7 +680,7 @@ td {
 
 .bullet-icon {
   float: left;
-  background: #b2bb1d;
+  background: #1694CA;
   padding: 0.875rem;
   width: 3.5rem;
   height: 3.5rem;
@@ -691,15 +691,15 @@ td {
 }
 
 .bullet-icon-1 {
-  background: #b2bb1d;
+  background: #1694CA;
 }
 
 .bullet-icon-2 {
-  background: #bb8f1d;
+  background: #16cac4;
 }
 
 .bullet-icon-3 {
-  background: #aa1dbb;
+  background: #b2ca16;
 }
 
 .bullet-content {

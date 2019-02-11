@@ -1,6 +1,6 @@
 // Core
 $core-text:						#555;
-$core-accent:					#b2bb1d;
+$core-accent:					#1694CA;
 $secondary-link:				#F8B450;
 $white:							#fff;
 $black:							#000;
@@ -25,7 +25,7 @@ $header-text:					#aaa;
 $nav-link:						#aaa;
 
 // Showcase
-$showcase-bg:					lighten($core-accent, 6%);
+$showcase-bg:					lighten($core-accent, 15%);
 $showcase-text:					#fff;
 
 // Feature
@@ -33,7 +33,7 @@ $feature-bg:					#fff;
 
 // Main Body
 $main-bg:						#f7f7f7;
-$body-border:					darken($main-bg, 5%);
+$body-border:					darken($main-bg, 15%);
 
 // Sidebar
 $sidebar-text:					#aaa;
