@@ -1,0 +1,48 @@
+/*
+===============================================================================================================================
+Custom Ginkgo Street CSS
+===============================================================================================================================
+*/
+
+/* Hide sidebar numbering */
+
+#sidebar ul.topics > li > a b {
+  display: none;
+}
+
+/* Add a little space around the client logo */
+
+#header #logo {
+  margin: 1.3em 0 0 0;
+}
+
+/* Hide clipboard icon */
+/*
+.copy-to-clipboard {
+  display:none;
+}
+*/
+
+/* Hides the sub-menu item if parent not active */
+.dd-item .dd-item ul li {
+    display: none;
+}
+
+.dd-item .dd-item.active ul li,
+.dd-item.parent > ul > li {
+    display: block;
+}
+
+/* Hides the sub-sub-menu menu-item if parent not active */
+.dd-item.parent > ul > li.dd-item.active > ul > li > ul > li {
+    display: none;
+}
+
+.dd-item.parent > ul > li.dd-item.active > ul > li {
+    display: block;
+}
+
+/* Who in their right mind middle-aligns table cells? */
+tr, td, th {
+    vertical-align: top;
+}

@@ -1,0 +1,127 @@
+name: Ginkgo RTFM
+version: 1.0.0
+description: "A customized version of the Learn2 theme, based on the Learn2 Git Sync theme. Includes selectable visual styles and a field stick a logo URL into."
+icon: git
+author:
+ name: Evan Chute
+ email: echute@ginkgostreet.com
+ url: http://www.ginkgostreet.com
+homepage: https://github.com/ginkgostreet/grav-theme-ginkgo-rtfm
+bugs: https://github.com/ginkgostreet/grav-theme-ginkgo-rtfm/issues
+keywords: learn2, gitsync, rtfm
+license: MIT
+
+dependencies:
+  - admin
+  - breadcrumbs
+  - learn2
+  - error
+  - external_links
+  - feed
+  - git-sync
+  - highlight
+  - problems
+  - simplesearch
+  - tntsearch
+  - youtube
+  - modified-date
+
+form:
+  validation: loose
+  fields:
+
+    siteandpageoptions:
+      type: section
+      title: 'Ginkgo RTFM Theme Options'
+      underline: true
+
+    logo_url:
+        type: text
+        label: Logo URL
+        placeholder: https://ginkgostreet.com/sites/default/files/ginkgo-street-labs.png
+        validate:
+          type: text
+
+    hide_site_title:
+        type: toggle
+        label: 'Hide Site Title'
+        highlight: 1
+        default: 0
+        options:
+            1: 'Yes'
+            0: 'No'
+        validate:
+            type: bool
+
+    style:
+      type: select
+      size: medium
+      label: Style
+      description: Custom style selection.
+      default: default
+      options:
+        default: Default
+        hoth: Hoth
+        longyearbyen: Longyearbyen
+        spitsbergen: Spitsbergen (Hoth v2)
+
+    top_level_version:
+        type: toggle
+        label: Top Level Version
+        highlight: 1
+        default: 0
+        options:
+          1: Enabled
+          0: Disabled
+        validate:
+          type: bool
+
+    home_url:
+        type: text
+        label: Home URL
+        placeholder: http://getgrav.org
+        validate:
+          type: text
+
+    google_analytics_code:
+        type: text
+        label: Google Analytics Code
+        placeholder: UA-XXXXXXXX-X
+        validate:
+          type: text
+
+    default_taxonomy_category:
+      type: text
+      label: Default Taxonomy Category
+      validate:
+          required: true
+
+    gitsyncoptions:
+      type: section
+      title: 'Git Sync Link Options'
+      underline: true
+
+    github.position:
+        type: select
+        size: medium
+        classes: fancy
+        label: Git Link Position
+        options:
+            top: Top
+            bottom: Bottom
+            off: Off
+
+    github.icon:
+        type: input.text
+        size: small
+        label: Custom Git Link Font Awesome Icon
+        description: Icon short name.
+        help: Enter the short name of the Font Awesome icon for the link, for example 'gitlab'.
+        validate:
+            type: text
+
+    github.tree:
+        type: text
+        label: Custom Git Repository Tree URL
+        help: Enter the URL that leads to the pages folder of your Git Repository.
+        description: "URL path to the pages folder, but with '/pages' and everything following it removed. For example, 'https://github.com/paulhibbitts/demo-grav-learn2-with-git-sync/tree/master'."
