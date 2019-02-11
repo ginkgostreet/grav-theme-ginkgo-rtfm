@@ -53,18 +53,6 @@ form:
         validate:
             type: bool
 
-    style:
-      type: select
-      size: medium
-      label: Style
-      description: Custom style selection.
-      default: default
-      options:
-        default: Default
-        hoth: Hoth
-        longyearbyen: Longyearbyen
-        spitsbergen: Spitsbergen (Hoth v2)
-
     top_level_version:
         type: toggle
         label: Top Level Version
