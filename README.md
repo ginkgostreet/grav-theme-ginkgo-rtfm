@@ -1,14 +1,15 @@
 # Ginkgo RTFM
 
-The Ginkgo RTFM theme is a customized version of the default [Grav Learn](http://learn.getgrav.org) theme, and includes some extra configurable options:
+The Ginkgo RTFM theme is a customized version of the default [Grav Learn](http://learn.getgrav.org) theme, and includes some extra features:
 
-- Logo URL
+- Configurable logo URL in the theme options (either in Admin UI or ginkgo-rtfm.yaml)
+- Addition of a Table of Contents for `docs` page types in the theme, which uses the [Page Toc](https://github.com/trilbymedia/grav-plugin-page-toc) plugin. I'm pretty sure this feature in the theme will fail silently if the plugin is disabled or not present, haven't tested it though.
 
 # Installation
 
 Installing the Ginkgo RTFM theme can be done in one of two ways. Our GPM (Grav Package Manager) installation method enables you to quickly and easily install the theme with a simple terminal command, while the manual method enables you to do so via a zip file.
 
-The theme is designed to be used to provide a documentation site. You can see this in action at [learn.hibbittsdesign.org](http://learn.hibbittsdesign.org)
+The theme is designed to be used to provide a documentation site. You can see this in action at [rtfm.ginkgo.st](http://rtfm.ginkgo.st)
 
 ## GitHub Installation (Preferred)
 
@@ -30,11 +31,7 @@ You should now have all the theme files under
 
 >> NOTE: This theme is a modular component for Grav which requires the [Grav](http://github.com/getgrav/grav), [Error](https://github.com/getgrav/grav-theme-error) and [Problems](https://github.com/getgrav/grav-plugin-problems) plugins.
 
-### Recompile CSS from SCSS
-
-To recompile default style using a Sass-compiler, run it on /scss/theme.scss and output to /css/theme.css, like `node-sass --watch --source-map true scss/theme.scss css-compiled/theme.css`. To do the same for custom styles, run it on /scss/custom and output to /css-compiled/custom, like `node-sass --watch --source-map true scss/custom/ css-compiled/custom`.
-
-## Features
+# Features
 
 * Lightweight and minimal for optimal performance
 * Fully responsive with off-page mobile navigation
@@ -42,7 +39,7 @@ To recompile default style using a Sass-compiler, run it on /scss/theme.scss and
 * Built specifically for providing easy to read documentation
 * Fontawesome icon support
 
-### Supported Page Templates
+## Supported Page Templates
 
 * "Docs" template
 * "Chapter" template
@@ -60,8 +57,8 @@ If you want to set Ginkgo RTFM as the default theme, you can do so by following 
 
 Once this is done, you should be able to see the new theme on the frontend. Keep in mind any customizations made to the previous theme will not be reflected as all of the theme and templating information is now being pulled from the **ginkgo-rtfm** folder.
 
-## To Do
+# To Do
 
 - Make page numbers in nav a configurable option in the theme
 - Make hiding sub-menu and sub-sub-menu items if parent(s) not active a configurable option in the theme
-- Create theme option for configuring which page templates will display the TOC plugin
+- Create theme option for configuring which page templates will display a Table of Contents, to facilitate further page type development.
