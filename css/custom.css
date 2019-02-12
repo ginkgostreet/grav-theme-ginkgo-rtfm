@@ -1,6 +1,6 @@
 /*
 ===============================================================================================================================
-Custom Ginkgo Street CSS
+Custom CSS
 ===============================================================================================================================
 */
 
@@ -9,13 +9,6 @@ Custom Ginkgo Street CSS
 #sidebar ul.topics > li > a b {
   display: none;
 }
-
-/* Add a little space around the client logo */
-/*
-#header #logo {
-  margin: 1.3em 0 0 0;
-}
-*/
 
 /* Hide clipboard icon */
 /*
@@ -42,10 +35,3 @@ Custom Ginkgo Street CSS
 .dd-item.parent > ul > li.dd-item.active > ul > li {
     display: block;
 }
-
-/* Who in their right mind middle-aligns table cells? */
-/*
-tr, td, th {
-    vertical-align: top;
-}
-*/
