@@ -42,16 +42,6 @@ form:
         validate:
           type: text
 
-    accent_color:
-      type: select
-      size: medium
-      label: Accent Color
-      description: Pic an accent color for this site.
-      default: default_blue
-      options:
-        default_blue: Default Blue
-        ginkgo_green: Ginkgo Green
-
     hide_site_title:
         type: toggle
         label: 'Hide Site Title'
