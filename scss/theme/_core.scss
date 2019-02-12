@@ -28,3 +28,8 @@ b, strong {
 .default-animation {
     @include transition(all 0.5s ease);
 }
+
+/* Who in their right mind middle-aligns table cells? */
+tr, td, th {
+    vertical-align: top;
+}

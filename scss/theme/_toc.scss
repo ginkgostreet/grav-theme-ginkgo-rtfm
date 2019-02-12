@@ -1,0 +1,63 @@
+$toc-width: $sidebar-width*.75;
+
+#page-toc {
+    width: $toc-width;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding-top: 23px;
+    background: $light-gray;
+    min-height: 100%;
+    
+    h4 {
+        line-height: normal;
+        padding-left: .3em;
+    }
+    
+    a {
+        color: lighten($core-text, 30%);
+        &:hover {
+            color: $core-text;
+        }
+    }
+    
+    ul {
+        padding-inline-start: .3em;
+        
+        li {
+            list-style-type: none;
+        }
+
+        ul {
+            padding-inline-start: .6em;
+            
+            li {
+                list-style-type: none;
+            }
+        }
+    }
+
+		@media only #{$media} and (max-width: $large-desktop-container) {
+        display: none;
+    }
+}
+
+/* Give us some space for the Table of Contents */
+
+@mixin toc-margin {
+    margin-right: $toc-width*1.1;
+}
+
+#body {
+		@media only #{$media} and (min-width: $large-desktop-container) {
+        .nav.nav-next.toc-margin {
+            @include toc-margin
+        }
+    }
+}
+
+#body.toc-margin {
+		@media only #{$media} and (min-width: $large-desktop-container) {
+        @include toc-margin
+    }
+}

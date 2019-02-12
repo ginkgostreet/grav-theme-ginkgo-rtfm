@@ -1,0 +1,8 @@
+{% if config.get('plugins.page-toc.active') or attribute(page.header, 'page-toc').active %}
+  {% if toc(page.content) is not empty %}
+    <div id="page-toc">
+        <h4>Table of Contents</h4>
+        {{ toc(page.content) }}
+    </div>
+  {% endif %}
+{% endif %}

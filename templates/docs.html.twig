@@ -18,6 +18,12 @@
 	</div>
 {% endblock %}
 
+{% block toc %}
+    {% if page.template == 'docs' %}
+      {% include 'partials/toc.html.twig' %}
+    {% endif %}
+{% endblock %}
+
 {% block content %}
     {% include 'partials/page.html.twig' %}
 {% endblock %}

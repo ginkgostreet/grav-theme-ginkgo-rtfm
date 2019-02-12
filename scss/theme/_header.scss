@@ -8,16 +8,9 @@
     a {
         display: inline-block;
     }
-
-    #logo-svg {
-        @extend .default-animation;
-        width: $logo-width;
-        height: $logo-height;
-
-        path {
-            @extend .default-animation;
-            fill: $white;
-        }
+    
+    #logo {
+        margin: 1.3em 0 0 0;
     }
 }
 

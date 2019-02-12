@@ -33,7 +33,7 @@
         {% do assets.addJs('theme://js/featherlight.min.js') %}
         {% do assets.addJs('theme://js/clipboard.min.js') %}
         {% do assets.addJs('theme://js/jquery.scrollbar.min.js') %}
-        {% do assets.addJs('theme://js/learn.js') %}
+        {% do assets.addJs('theme://js/ginkgo-rtfm.js') %}
         {{ assets.js() }}
     {% endblock %}
 
@@ -52,6 +52,7 @@
   </nav>
   {% endblock %}
 
+    {% block toc %}{% endblock %}
     {% block body %}
     <section id="body">
         <div id="overlay"></div>

@@ -11,10 +11,11 @@ Custom Ginkgo Street CSS
 }
 
 /* Add a little space around the client logo */
-
+/*
 #header #logo {
   margin: 1.3em 0 0 0;
 }
+*/
 
 /* Hide clipboard icon */
 /*
@@ -43,6 +44,8 @@ Custom Ginkgo Street CSS
 }
 
 /* Who in their right mind middle-aligns table cells? */
+/*
 tr, td, th {
     vertical-align: top;
 }
+*/

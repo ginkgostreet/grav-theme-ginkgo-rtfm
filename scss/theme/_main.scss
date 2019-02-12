@@ -23,6 +23,10 @@
     position: relative;
     margin-left: $sidebar-width;
     min-height: 100%;
+    
+    &.docs_page {
+        margin-right: $sidebar-width;
+    }
 
     .bordered {
         border: 1px solid #ccc;

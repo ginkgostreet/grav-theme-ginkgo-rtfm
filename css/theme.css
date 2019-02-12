@@ -45,10 +45,15 @@ b, strong, th, label {
   font-weight: 600;
 }
 
-.default-animation, #body .nav, #body .padding, #body, #sidebar ul, #sidebar, #header #logo-svg path, #header #logo-svg {
+.default-animation, #body .nav, #body .padding, #body, #sidebar ul, #sidebar {
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   transition: all 0.5s ease;
+}
+
+/* Who in their right mind middle-aligns table cells? */
+tr, td, th {
+  vertical-align: top;
 }
 
 fieldset {
@@ -77,12 +82,8 @@ textarea:focus, input[type=email]:focus, input[type=number]:focus, input[type=pa
 #header a {
   display: inline-block;
 }
-#header #logo-svg {
-  width: 8rem;
-  height: 2rem;
-}
-#header #logo-svg path {
-  fill: #fff;
+#header #logo {
+  margin: 1.3em 0 0 0;
 }
 
 .searchbox {
@@ -316,6 +317,9 @@ textarea:focus, input[type=email]:focus, input[type=number]:focus, input[type=pa
 }
 #body img.shadow, #body .video-container.shadow {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+#body.docs_page {
+  margin-right: 300px;
 }
 #body .bordered {
   border: 1px solid #ccc;
@@ -978,6 +982,56 @@ td {
 
 .scrollbar-inner > .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_size {
   top: -12px;
+}
+
+#page-toc {
+  width: 225px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding-top: 23px;
+  background: #ddd;
+  min-height: 100%;
+}
+#page-toc h4 {
+  line-height: normal;
+  padding-left: 0.3em;
+}
+#page-toc a {
+  color: #a2a2a2;
+}
+#page-toc a:hover {
+  color: #555;
+}
+#page-toc ul {
+  padding-inline-start: 0.3em;
+}
+#page-toc ul li {
+  list-style-type: none;
+}
+#page-toc ul ul {
+  padding-inline-start: 0.6em;
+}
+#page-toc ul ul li {
+  list-style-type: none;
+}
+@media only all and (max-width: 75em) {
+  #page-toc {
+    display: none;
+  }
+}
+
+/* Give us some space for the Table of Contents */
+@media only all and (min-width: 75em) {
+  #body .nav.nav-next.toc-margin {
+    margin-right: 247.5px;
+  }
+}
+
+@media only all and (min-width: 75em) {
+  #body.toc-margin {
+    margin-right: 247.5px;
+  }
 }
 
 .lightbox-active #body {
