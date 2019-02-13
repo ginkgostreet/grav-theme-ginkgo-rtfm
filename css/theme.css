@@ -316,7 +316,7 @@ textarea:focus, input[type=email]:focus, input[type=number]:focus, input[type=pa
   padding: 2px;
 }
 #body img.shadow, #body .video-container.shadow {
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.4);
 }
 #body.docs_page {
   margin-right: 300px;
