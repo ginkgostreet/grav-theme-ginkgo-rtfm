@@ -54,6 +54,25 @@
         {% endif %}
         <hr />
 
+        {% if config.plugins.login.enabled and not grav.user.username and not grav.user.authenticated %}
+            <div>
+              <a class="logout padding" href="/user_profile">
+                  <i class="fa fa-fw fa-sign-in"></i> Login</a>
+            </div>
+            <div>
+              <a class="logout padding" href="/user_register">
+                  <i class="fa fa-fw fa-user-plus"></i> Register</a>
+            </div>
+        {% endif %}
+
+        {% if config.plugins.login.enabled and grav.user.username and grav.user.authenticated %}
+            <div>
+              <a class="logout padding" href="{{ uri.addNonce((base_url_relative ~ uri.path)|trim('/') ~ '/task' ~ config.system.param_sep ~ 'login.logout', 'logout-form', 'logout-nonce')|e }}">
+                  <i class="fa fa-fw fa-sign-out"></i> {{ 'PLUGIN_LOGIN.BTN_LOGOUT'|t }} {{ grav.user.fullname ?: grav.user.username }}
+              </a>
+            </div>
+        {% endif %}
+
         <a class="padding" href="#" data-clear-history-toggle><i
                     class="fa fa-fw fa-history"></i> {{ 'THEME_LEARN2_CLEAR_HISTORY'|t }}</a><br/>
 
