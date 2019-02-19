@@ -996,6 +996,7 @@ td {
 #page-toc h4 {
   line-height: normal;
   padding-left: 0.3em;
+  margin-bottom: 0px;
 }
 #page-toc a {
   color: #a2a2a2;
@@ -1005,15 +1006,22 @@ td {
 }
 #page-toc ul {
   padding-inline-start: 0.3em;
+  margin-bottom: 0px;
+  margin-top: 0px;
 }
 #page-toc ul li {
   list-style-type: none;
+  line-height: normal;
+  padding-bottom: 0.6em;
+}
+#page-toc ul li.last {
+  padding-bottom: 0px;
+}
+#page-toc ul li.first {
+  padding-top: 0.3em;
 }
 #page-toc ul ul {
   padding-inline-start: 0.6em;
-}
-#page-toc ul ul li {
-  list-style-type: none;
 }
 @media only all and (max-width: 75em) {
   #page-toc {

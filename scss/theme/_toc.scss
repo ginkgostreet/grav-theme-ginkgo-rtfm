@@ -12,6 +12,7 @@ $toc-width: $sidebar-width*.75;
     h4 {
         line-height: normal;
         padding-left: .3em;
+        margin-bottom: 0px;
     }
     
     a {
@@ -23,17 +24,25 @@ $toc-width: $sidebar-width*.75;
     
     ul {
         padding-inline-start: .3em;
+        margin-bottom: 0px;
+        margin-top: 0px;
         
         li {
             list-style-type: none;
+            line-height: normal;
+            padding-bottom: .6em;
+        }
+        
+        li.last {
+            padding-bottom: 0px;
+        }
+
+        li.first {
+            padding-top: .3em;
         }
 
         ul {
             padding-inline-start: .6em;
-            
-            li {
-                list-style-type: none;
-            }
         }
     }
 
