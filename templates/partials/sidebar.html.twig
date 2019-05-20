@@ -56,11 +56,11 @@
 
         {% if config.plugins.login.enabled and not grav.user.username and not grav.user.authenticated %}
             <div>
-              <a class="logout padding" href="/user_profile">
-                  <i class="fa fa-fw fa-sign-in"></i> Login</a>
+              <a class="logout padding" href="{{ base_url }}/admin">
+                  <i class="fa fa-fw fa-sign-in"></i> Admin Login</a>
             </div>
             <div>
-              <a class="logout padding" href="/user_register">
+              <a class="logout padding" href="{{ base_url }}/user_register">
                   <i class="fa fa-fw fa-user-plus"></i> Register</a>
             </div>
         {% endif %}
